@@ -6,7 +6,7 @@ import java.util.Collections;
 
 public class Main {
 	public static void main(String[] args) {
-		List<Integer> intSourceList = Arrays.asList( 1, 2, 5, 16, -1, -2, 0, 32, 3, 5, 8, 23, 4 );
+		List<Integer> intSourceList = Arrays.asList(1, 2, 5, 16, -1, -2, 0, 32, 3, 5, 8, 23, 4);
 
 		// Выделение положительных элементов из списка
 
@@ -16,7 +16,7 @@ public class Main {
 
 		while (iterator0.hasNext()) {
 			int item = (int) iterator0.next();
-			if(item > 0) {
+			if (item > 0) {
 				intPositiveList.add(item);
 			}
 		}
@@ -29,14 +29,13 @@ public class Main {
 
 		while (iterator1.hasNext()) {
 			int item = (int) iterator1.next();
-			if(item % 2 == 0) {
+			if (item % 2 == 0) {
 				intEvenList.add(item);
 			}
 		}
-		
+
 		// Сортировка списка
 		Collections.sort(intEvenList);
-
 
 		// Вывести список
 		System.out.println(intEvenList);
